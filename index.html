@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>NWJS Demo</title>
+</head>
+<body ng-controller="DemoCtrl as vm">
+    <button ng-click="vm.save()" ng-disabled="!vm.text">Save</button>
+    <button ng-click="vm.load()">Load</button>
+    <br>
+    <textarea ng-model="vm.text"></textarea>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/FileSystemService.js"></script>
+</body>
+</html>
